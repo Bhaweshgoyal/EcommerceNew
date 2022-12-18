@@ -7,7 +7,7 @@ const OrderRoutes = (app)=>{
     app.get('/ecomm/api/v1/getAllOrdersProduct' , isAuthenticated , getAllOrdersProduct)
     app.post('/ecomm/api/v1/createcart',isAuthenticated,createOrderInit)
     app.post('/ecomm/api/v1/addProduct',isAuthenticated,addProduct)
-    app.patch(`/ecom/api/v1/removeProduct`,isAuthenticated ,removeProduct)
+    app.patch(`/ecomm/api/v1/removeProduct`,isAuthenticated ,removeProduct)
 }
 module.exports = {
     OrderRoutes
